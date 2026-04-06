@@ -1,0 +1,1850 @@
+
+############################################################
+PHASE 1: INTERNAL AI vs AI TOURNAMENT
+############################################################
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(17, 12, 71), (25, 24, 51), (20, 20, 60)]
+----------------------------------------
+Board Points: [13, 12, 31]
+Single Agent: [26, 25, 49] (Score: 25) | Parallel Team: [17, 12, 71] (Score: 31)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Gravity Grid Game) | TRIAL 1/3 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 3, 4]
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 5
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 2, 0]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [1, 4, 2]
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 5
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 1, 1]
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+Col: 0 1 2 3 4 5 6
+     . . . . . . .
+     . . . . . . .
+     . . . . . . .
+     . . . X . . .
+     . O . O O X .
+     O O X X X X .
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize the points, we need to ensure we have more units in zones with higher point values. Given that Zone A has the highest point value, followed by Zone C and then Zone B, a strategic distribution would be to allocate more units to Zone A and Zone C while still ensuring a competitive number for Zone B.', 'move': [34, 21, 45]}
+  -> {'reasoning': 'The reasoning provided is logical and aligns with the goal of maximizing points by concentrating units in high-value zones. However, the move values could be more precisely allocated to better reflect the point distribution.', 'move': [30, 14, 21]}
+  -> {'reasoning': "The Critic's suggestion provides a balanced approach that aligns well with maximizing points while ensuring a strategic distribution among all zones. The adjusted numbers better reflect the point value differences between zones.", 'move': [30, 14, 21]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [30, 14, 21]
+Board Points: [30, 14, 21]
+Single Agent: [50, 25, 25] (Score: 65) | Hierarchical Team: [0, 0, 0] (Score: 0)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Gravity Grid Game) | TRIAL 1/3 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Given that the first player has placed their token in column 0 and no other tokens have been played yet, we can choose any column except 0 to maximize our chances of winning. Choosing column 6 as a defensive move could be strategic.', 'move': 6}
+  -> {'reasoning': "While the reasoning provided is clear, choosing column 6 as a defensive move might not be optimal in this initial state. Given that the first player has only placed one token in column 0 and no other tokens have been played yet, it's more beneficial to focus on creating potential winning lines rather than purely defending.", 'move': 1}
+  -> {'reasoning': 'Considering the initial state of the game where only one token has been placed in column 0 and no other tokens have been played, focusing on creating potential winning lines is more strategic than immediately choosing a defensive move. Column 1 can help set up for future moves.', 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 6
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1's last move was column 5, forming a potential winning line on the right side if another token can connect diagonally or vertically. To prevent this and control the center area which is strategic, playing in column 3 seems like a good defensive move.", 'move': 3}
+  -> {'reasoning': "Player 1's move in column 5 is strategic as it forms a potential winning line on the right side, which could be completed with another token either vertically or diagonally. Playing in column 3 to control the center area is a strong defensive and potentially offensive play, as it can block Player 2 from completing a diagonal win while also setting up opportunities for Player 1.", 'move': 3}
+  -> {'reasoning': 'Both the Reasoner and Critic agree that playing in column 3 is a strategic defensive and potentially offensive move, which aligns with the goal of preventing Player 1 from winning while setting up opportunities for oneself.', 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 just played in column 4, leading to an open opportunity for Player 2 to create a potential win or block Player 1's potential win in the next move. Dropping a token in column 3 could either complete a horizontal connection or block Player 1 from doing so.", 'move': 3}
+  -> {'reasoning': "Player 1 just played in column 4, creating an open opportunity for Player 2 to either complete a horizontal connection or block Player 1's potential win. Playing in column 3 is a strategic move.", 'move': 3}
+  -> {'reasoning': "Player 1 just played in column 4, leading to an open opportunity for Player 2 to create a potential win or block Player 1's potential win in the next move. Dropping a token in column 3 could either complete a horizontal connection or block Player 1 from doing so.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1's last move was at column 4, and there is a potential threat of Player 1 connecting four horizontally or vertically in the next move. Therefore, it's strategic to block this by playing in column 2.", 'move': 2}
+  -> {'reasoning': 'The reasoning correctly identifies the threat of Player 1 connecting four horizontally or vertically in the next move and suggests a strategic block. However, it does not fully account for the current board state, which shows that blocking is unnecessary as there are no potential immediate wins for either player.', 'move': []}
+  -> {'reasoning': 'The current board state indicates no immediate threat of winning for either Player 1 or Player 2, thus a strategic block in column 2 by Player 2 is not necessary.', 'move': []}
+----------------------------------------
+HALLUCINATION: Hierarchical Team tried invalid []
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has just played in column 2, creating a potential winning line for them on the next move. To prevent this, Player 2 should play in column 1 to block.', 'move': 1}
+  -> {'reasoning': 'Player 1 has a strong potential for a win in column 2 with their next move. Player 2 should block this by playing in column 1 to disrupt the winning line.', 'move': 1}
+  -> {'reasoning': 'Both Reasoner and Critic agree that Player 2 should play in column 1 to prevent Player 1 from winning.', 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has just placed a token in column 4, which creates an open opportunity for Player 2 to win by placing a token in the same column. Doing so will complete a horizontal line of 4 tokens (OOOX).', 'move': 4}
+  -> {'reasoning': 'The reasoning provided is accurate as it correctly identifies the opportunity for Player 2 to win by playing in column 4. However, it might be more strategic to block the opponent first or consider the overall game state before committing to a winning move.', 'move': 4}
+  -> {'reasoning': 'The reasoning from both Reasoner and Critic points towards playing in column 4 as it directly addresses the immediate threat of Player 1 creating a line of four tokens. However, considering the overall game state could lead to better long-term outcomes.', 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 2 should block Player 1's potential win by placing a token in column 4.", 'move': 4}
+  -> {'reasoning': 'Player 1 has two tokens in column 4, and placing a token there would complete a horizontal win for Player 1. Therefore, Player 2 should block by playing in column 4.', 'move': 4}
+  -> {'reasoning': "Both the Reasoner and Critic agree that Player 2 should block Player 1's potential win by placing a token in column 4.", 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "The board has an open slot in column 6, and playing there could potentially block the opponent's winning move or create a winning opportunity.", 'move': 6}
+  -> {'reasoning': "The reasoning provided is logical as playing in column 6 could block the opponent's potential win or create a winning opportunity for the current player. The move is valid.", 'move': 6}
+  -> {'reasoning': "The board has an open slot in column 6, and playing there could potentially block the opponent's winning move or create a winning opportunity.", 'move': 6}
+----------------------------------------
+Hierarchical Team executes move: Column 6
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1's token can potentially complete a winning line in column 3 or block Player 2 from doing so. Playing in column 5 is also strategic to control the center of the board.", 'move': 3}
+  -> {'reasoning': 'The reasoning provided is logical as playing in column 3 could indeed complete a winning line or block the opponent from doing so. However, playing in column 5 to control the center of the board might be more strategically important given the current state.', 'move': [3, 5]}
+  -> {'reasoning': 'Considering both the potential for completing a winning line or blocking Player 2 in column 3 and the strategic importance of controlling the center by playing in column 5, the move will be column 5 to maintain flexibility.', 'move': 5}
+----------------------------------------
+Hierarchical Team executes move: Column 5
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just played column 4, creating an opportunity for Player 2 to block a potential win by completing a horizontal line in column 5.', 'move': 5}
+  -> {'reasoning': "Player 1's move in column 4 has created a potential win opportunity by aligning three pieces horizontally. To prevent Player 1 from winning on their next turn, Player 2 should block this line by playing in column 5.", 'move': 5}
+  -> {'reasoning': 'Player 1 just played column 4, creating an opportunity for Player 2 to block a potential win by completing a horizontal line in column 5.', 'move': 5}
+----------------------------------------
+Hierarchical Team executes move: Column 5
+Col: 0 1 2 3 4 5 6
+     . . . . . . .
+     . . . X . . .
+     . . X X . . .
+     . . X X O . .
+     X O X O O O O
+     X O O O X O X
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(50, 10, 40), (50, 20, 30), (35, 10, 55)]
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "To maximize the points, we should allocate more units to the zones with higher point values and ensure that at least one allocation is greater than our opponent's potential maximum for each zone.", 'move': [50, 25, 25]}
+  -> {'reasoning': "The strategy of allocating units to zones with higher point values is sound. However, the move [50, 25, 25] does not fully leverage the potential for maximum points because it does not allocate more than one unit to Zone B (which has a lower but still valuable point value compared to Zones A and C). Additionally, since the opponent's potential maximum allocation is likely higher in zones with greater point values, allocating 50 units to one zone might be overcommitting. A better approach would be to balance between high-value zones while ensuring no zone is left unattended.", 'move': [33, 17, 50]}
+  -> {'reasoning': "Balancing the allocation to maximize points across all zones without overcommitting in any one zone, and ensuring that each zone receives more than the opponent's potential maximum, results in a balanced strategy. The Critic's suggestion of [33, 17, 50] better addresses these considerations.", 'move': [33, 17, 50]}
+----------------------------------------
+Board Points: [48, 39, 48]
+Parallel Team: [50, 10, 40] (Score: 48) | Hierarchical Team: [33, 17, 50] (Score: 87)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Gravity Grid Game) | TRIAL 1/3 ---
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has placed their token in column 4, creating an opportunity for Player 2 to block a potential horizontal win and set up future moves.', 'move': 4}
+  -> {'reasoning': 'The reasoning provided is partially correct but could be more detailed. Player 2 is not creating a potential horizontal win for themselves by playing in column 4; rather, they are preventing Player 1 from completing a winning move horizontally across columns 3 and 5. This defensive play also sets up future moves by controlling the center of the board.', 'move': 4}
+  -> {'reasoning': "Player 2 is focusing on blocking Player 1's potential win while simultaneously setting up advantageous positions for themselves.", 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just placed a token in column 4, creating an opportunity for Player 2 to block a potential win and set up future moves.', 'move': 4}
+  -> {'reasoning': 'Player 1 has tokens in columns 4 and 5, creating a vertical threat for the next turn. To prevent Player 1 from winning, Player 2 should block the column where Player 1 is building the threat.', 'move': 5}
+  -> {'reasoning': 'To prevent Player 1 from winning, Player 2 should block the vertical threat in column 5.', 'move': 5}
+----------------------------------------
+Hierarchical Team executes move: Column 5
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 4, 3]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has created a potential threat of a vertical win in column 2. To block this and create my own opportunities, I should play in column 3.', 'move': 3}
+  -> {'reasoning': "While the reasoning provided is logical in terms of blocking a potential vertical win for Player 1, it overlooks the fact that playing in column 3 does not create any immediate opportunities for the current player to win. A more strategic move would be to block the opponent's threat while also setting up future winning combinations.", 'move': 2}
+  -> {'reasoning': "While blocking Player 1's potential vertical win in column 2 is important, it is crucial to also consider creating immediate opportunities for oneself. Playing in column 3 would not only block the opponent but also potentially set up future winning combinations.", 'move': 2}
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 3, 0]
+----------------------------------------
+Parallel Team executes move: Column 6
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just placed a token in column 4, creating an open 'X' for Player 2 to connect 4 tokens vertically at columns 3 and 4. To win, Player 2 should place a token in column 3.", 'move': 3}
+  -> {'reasoning': "Player 1 has just placed a token in column 4, creating an open 'X' for Player 2 to connect 4 tokens vertically at columns 3 and 4. To win, Player 2 should place a token in column 3.", 'move': 3}
+  -> {'reasoning': "Player 1 has just placed a token in column 4, creating an open 'X' for Player 2 to connect 4 tokens vertically at columns 3 and 4. To win, Player 2 should place a token in column 3.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 5, 1]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has just played in column 4, completing a vertical win (O X). To prevent an immediate loss, I should block the potential horizontal and diagonal wins by playing in columns 0 or 2.', 'move': 0}
+  -> {'reasoning': 'Player 1 just completed a vertical win in column 4. To prevent an immediate loss, blocking potential horizontal and diagonal wins is necessary. However, playing in columns 0 or 2 does not necessarily block all winning lines; it depends on the board state. Given the current state, playing in column 1 would directly block the horizontal win.', 'move': 1}
+  -> {'reasoning': "Player 1 has just completed a vertical win in column 4. Blocking potential horizontal and diagonal wins is necessary to prevent an immediate loss. While columns 0 or 2 might seem like they would block all winning lines, the Critic's analysis suggests that playing in column 1 directly blocks the horizontal win. This move also maintains flexibility for future moves.", 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 5, 3]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 2 should aim to block Player 1's potential win or create a winning scenario for themselves. The board shows that Player 1 has a strong position in the center columns (3 and 4). Dropping a token in column 5 would complete a diagonal win for Player 2.", 'move': 5}
+  -> {'reasoning': "Player 2's reasoning is correct in aiming to create a diagonal win or block Player 1. However, the current board state does not support a diagonal win from column 5 for Player 2; it would result in an incorrect move as seen by the current setup.", 'move': [3]}
+  -> {'reasoning': "Player 2 should block Player 1's potential win in the center columns (3 and 4) since a diagonal win is not possible from column 5 given the current board state. Moving to column 3 helps prevent Player 1 from securing a win.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [None, 4, 2]
+----------------------------------------
+HALLUCINATION: Parallel Team tried invalid None
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Given the current state of the board, playing in column 1 will create a potential block for Player 1's next move and also set up an opportunity to win on the next turn by placing a token in column 4.", 'move': 1}
+  -> {'reasoning': "The reasoning provided is accurate as it highlights both defensive and offensive strategies. Playing in column 1 blocks Player 1's potential win and sets up a future win for the current player.", 'move': 1}
+  -> {'reasoning': "Given the current state of the board, playing in column 1 will create a potential block for Player 1's next move and also set up an opportunity to win on the next turn by placing a token in column 4.", 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 1, 4]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 2 should aim to block Player 1's potential win or create a threat of winning. The board is almost full, and the center column (column 3) has only one token which could be crucial in creating a diagonal or vertical connection.", 'move': 3}
+  -> {'reasoning': "Player 2 should aim to block Player 1's potential win or create a threat of winning. The board is almost full, and the center column (column 3) has only one token which could be crucial in creating a diagonal or vertical connection.", 'move': 3}
+  -> {'reasoning': "Player 2 should aim to block Player 1's potential win or create a threat of winning. The board is almost full, and the center column (column 3) has only one token which could be crucial in creating a diagonal or vertical connection.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 3, 5]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just played in column 3, leading to a potential block. To avoid immediate loss and create opportunities, playing in column 4 seems strategic as it can both block vertically and set up future moves.', 'move': 4}
+  -> {'reasoning': "The reasoning provided is logically sound. Playing in column 4 blocks the opponent's potential win while setting up future opportunities.", 'move': 4}
+  -> {'reasoning': 'Player 1 just played in column 3, leading to a potential block. To avoid immediate loss and create opportunities, playing in column 4 seems strategic as it can both block vertically and set up future moves.', 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+Col: 0 1 2 3 4 5 6
+     . . . O . . .
+     . . . O . . .
+     . . . X O . .
+     . O X O X . .
+     . X O X X . .
+     . O X X O O X
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(51, 25, 24), (49, 26, 25), (51, 20, 29)]
+----------------------------------------
+Board Points: [49, 21, 24]
+Single Agent: [50, 26, 24] (Score: 21) | Parallel Team: [51, 25, 24] (Score: 49)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Gravity Grid Game) | TRIAL 2/3 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 2, 5]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 5, 5]
+----------------------------------------
+Parallel Team executes move: Column 5
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 6
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 6, 3]
+----------------------------------------
+Parallel Team executes move: Column 5
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 3, 2]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 5, 3]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 5
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 4, 1]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 5, 2]
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 4, 5]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 0, 3]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+Col: 0 1 2 3 4 5 6
+     . . O X . . .
+     . . X O . . .
+     . . O O . . .
+     . . X X X X .
+     O . X O O O .
+     X . O X X O X
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize points, we need to allocate more units to the zones with higher point values. Since we must assign strictly more units to a zone than the opponent, and assuming the opponent will also try to win as many high-value zones as possible, we should aim for a distribution that maximizes our advantage in the highest value zones.', 'move': [12, 34, 54]}
+  -> {'reasoning': 'Given the point values of the zones (A: 21, B: 28, C: 14), we should prioritize allocating units to the highest value zone first, then the second highest, while ensuring more units than the opponent in each.', 'move': [34, 12, 0]}
+  -> {'reasoning': "Considering both Reasoner and Critic's strategies, we should focus on zones with high points while ensuring a lead over the opponent. Zone B with 28 points is the highest, followed by Zone C with 14 points, then Zone A with 21 points. Given that the reasoner suggests prioritizing higher value zones first, and considering the need to outdo the opponent, we adopt the move [34, 12, 0].", 'move': [34, 12, 0]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [34, 12, 0]
+Board Points: [21, 28, 14]
+Single Agent: [35, 34, 31] (Score: 63) | Hierarchical Team: [0, 0, 0] (Score: 0)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Gravity Grid Game) | TRIAL 2/3 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has placed a token in column 4, so I should block any potential vertical or diagonal connection they might form by placing my token in the same column or adjacent columns to limit their options.', 'move': 4}
+  -> {'reasoning': 'Player 1 has placed a token in column 4, so I should block any potential vertical or diagonal connection they might form by placing my token in the same column or adjacent columns to limit their options.', 'move': [3, 4, 5]}
+  -> {'reasoning': "Considering both the Reasoner and Critic's strategies, it is optimal to block Player 1's potential vertical and diagonal connections by placing a token in columns 3, 4, or 5.", 'move': [3, 4, 5]}
+----------------------------------------
+HALLUCINATION: Hierarchical Team tried invalid [3, 4, 5]
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1's last move was in column 4, which resulted in two X tokens next to each other. To prevent Player 1 from connecting four tokens and forcing a blocking move, I will play in column 3.", 'move': 3}
+  -> {'reasoning': "Player 1's strategic placement in column 4 prevents a horizontal win on the next turn. By playing in column 3, Player 2 aims to block this potential four-in-a-row scenario for Player 1 while maintaining flexibility in other directions.", 'move': 3}
+  -> {'reasoning': "Player 1's last move was in column 4, which resulted in two X tokens next to each other. To prevent Player 1 from connecting four tokens and forcing a blocking move, I will play in column 3.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 6
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just placed a token in column 4, creating an open '3' for Player 2 in columns 3 and 5. However, placing a token in column 5 would directly challenge Player 1's horizontal threat, so I will play in column 3 to connect four.", 'move': 3}
+  -> {'reasoning': "Player 1 has a strong horizontal threat in column 4. Playing in column 3 would create a vertical connection and block Player 1's threat effectively.", 'move': 3}
+  -> {'reasoning': "Considering both the Reasoner and Critic's strategies, playing in column 3 effectively blocks Player 1's horizontal threat while also creating potential for future moves. Both viewpoints agree on this choice.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has just placed a token in column 3, completing a potential horizontal win. To block this and potentially set up a winning move ourselves, we should play in column 2.', 'move': 2}
+  -> {'reasoning': 'The reasoning is sound as it correctly identifies the threat of a horizontal win for Player 1 in column 3 and justifies playing in column 2 to block this. However, the move could also be justified by setting up potential diagonal wins.', 'move': 2}
+  -> {'reasoning': 'Player 1 has just placed a token in column 3, completing a potential horizontal win. To block this and potentially set up a winning move ourselves, we should play in column 2.', 'move': 2}
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 2 should block the opponent's potential win or create a winning position if available. In this case, playing in column 6 will complete a horizontal line of 4 'X' tokens (XXXX), thus winning the game.", 'move': 6}
+  -> {'reasoning': "The reasoning provided is accurate and logical. Playing in column 6 would indeed complete a horizontal line of 4 'X' tokens, thus winning the game for Player 2.", 'move': 6}
+  -> {'reasoning': "Player 2 should block the opponent's potential win or create a winning position if available. In this case, playing in column 6 will complete a horizontal line of 4 'X' tokens (XXXX), thus winning the game.", 'move': 6}
+----------------------------------------
+Hierarchical Team executes move: Column 6
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 6
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1's last move was in column 4, which could lead to a potential block or counter-move. Considering the board, playing in column 6 might create an opportunity to connect four tokens vertically.", 'move': 6}
+  -> {'reasoning': "The reasoning provided is logical as it considers Player 1's recent move and the potential for creating a vertical connection. However, the move in column 6 might be premature without confirming that there are no better strategic moves available.", 'move': [3]}
+  -> {'reasoning': 'The Critic’s suggestion to check for better strategic moves before committing to column 6 is prudent. Given the current board state, exploring alternative moves like column 3 could potentially secure a win or prevent an immediate loss more effectively.', 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 just placed a token in column 3, completing a vertical win scenario for Player 1. To prevent an immediate loss, I should block Player 1's potential winning move by playing in column 2.", 'move': 2}
+  -> {'reasoning': "Player 1's last move in column 3 completes a vertical win. Playing in column 2 would block this win, as it creates two potential winning lines for Player 1 (one vertical and one diagonal). However, playing in column 0 or 4 would also effectively block the win while potentially setting up other opportunities.", 'move': 0}
+  -> {'reasoning': "Player 1's last move in column 3 completes a vertical win. Playing in column 2 would block this win, as it creates two potential winning lines for Player 1 (one vertical and one diagonal). However, playing in column 0 or 4 would also effectively block the win while potentially setting up other opportunities.", 'move': 0}
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+HALLUCINATION: Single Agent tried invalid 3
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 can force a win by playing in column 3.', 'move': 3}
+  -> {'reasoning': 'Player 1 can force a win by playing in column 3.', 'move': 3}
+  -> {'reasoning': 'Both Reasoner and Critic agree that Player 1 can force a win by playing in column 3.', 'move': 3}
+----------------------------------------
+HALLUCINATION: Hierarchical Team tried invalid 3
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 can force a win by playing in column 3.', 'move': 3}
+  -> {'reasoning': "The current board state does not immediately suggest that playing in column 3 will force a win for Player 1. Column 3 already contains an 'X', and there are no obvious winning combinations that can be forced by adding another 'X' to this column.", 'move': 0}
+  -> {'reasoning': 'After re-evaluating the board state, it appears that column 3 is already occupied, and playing there does not guarantee an immediate win for Player 1. Therefore, a different strategy should be considered.', 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 5
+Col: 0 1 2 3 4 5 6
+     . . . O . . .
+     . . . X X . .
+     . . . X O . .
+     . . . O X . X
+     . O . O X . O
+     O O O X X X X
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(40, 35, 25), (35, 34, 31), (35, 24, 41)]
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "To maximize the points, we need to allocate more units to the zones with higher point values. Zone A has the highest point value (25), followed by Zone C (21) and then Zone B (12). Given that we must strictly outperform our opponent in a zone to win its points, it's strategic to heavily favor the high-value zones.", 'move': [30, 14, 56]}
+  -> {'reasoning': 'The move aims to allocate more units to the high-value zones, which is a sound strategy given the point values. However, allocating 56 units to Zone C might be too aggressive and could leave us vulnerable if our opponent outperforms in that zone. A balanced approach would ensure we secure points while maintaining flexibility.', 'move': [30, 14, 27]}
+  -> {'reasoning': 'Considering the strategic advantage of targeting high-value zones but also needing to maintain a balance to avoid overcommitment, a more balanced approach would be advisable.', 'move': [30, 14, 35]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [30, 14, 35]
+Board Points: [25, 12, 21]
+Parallel Team: [40, 35, 25] (Score: 58) | Hierarchical Team: [0, 0, 0] (Score: 0)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Gravity Grid Game) | TRIAL 2/3 ---
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 3, 0]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1's piece is in the middle column (4), so I will play in column 3 to potentially set up a vertical connection.", 'move': 3}
+  -> {'reasoning': "The move is logically sound as it aims to set up a potential vertical connection. However, the player should consider that playing in column 4 might also be beneficial to counteract Player 1's piece more directly.", 'move': 3}
+  -> {'reasoning': "Considering both the strategic aim of setting up a vertical connection and the suggestion to consider an alternative move, the choice of playing in column 3 is valid but should be balanced with the possibility of responding to Player 1's piece directly.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 3, 4]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has created a vertical threat in column 4, so we need to block it by playing in column 4.', 'move': 4}
+  -> {'reasoning': "The reasoning is sound as player 2's move creates a vertical threat in column 4 that needs to be blocked.", 'move': 4}
+  -> {'reasoning': 'Player 1 has created a vertical threat in column 4, so we need to block it by playing in column 4.', 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [1, 6, 4]
+----------------------------------------
+Parallel Team executes move: Column 1
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just placed a token in column 4, creating an open '4-in-a-row' potential on both horizontal and diagonal lines. To block this and control the center of the board, it's best to place a token in column 3.", 'move': 3}
+  -> {'reasoning': "The reasoning provided is accurate as it correctly identifies the threat of a potential '4-in-a-row' on both horizontal and diagonal lines if Player 1 plays in column 3 next turn. Placing a token in column 3 to block this and control the center is a good strategy.", 'move': 3}
+  -> {'reasoning': "Player 1 has just created an open '4-in-a-row' potential, and placing a token in column 3 will block this threat and control the center of the board.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 3, 4]
+----------------------------------------
+Parallel Team executes move: Column 6
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just placed a token in column 4, completing a potential vertical win. To prevent this and create a threat of my own, I should play in column 3.', 'move': 3}
+  -> {'reasoning': 'The reasoning provided is logical as it prevents the opponent from winning and creates a threat of your own. However, the vertical win in column 4 might not be immediate if the top cell is empty. Playing in column 3 to create a horizontal threat is also valid.', 'move': 3}
+  -> {'reasoning': 'Player 1 just placed a token in column 4, completing a potential vertical win. To prevent this and create a threat of my own, I should play in column 3.', 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 3, 6]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just placed a token in column 3, completing a potential vertical win for them (X's in columns 3 and 4 of row 5). To prevent this, I should block by placing my token in column 4.", 'move': 4}
+  -> {'reasoning': "Correct reasoning to block the opponent's potential win.", 'move': 4}
+  -> {'reasoning': 'Player 1 has just completed a potential vertical win, so placing a token in column 4 will block their win.', 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 3, 0]
+----------------------------------------
+Parallel Team executes move: Column 2
+Col: 0 1 2 3 4 5 6
+     . . . . . . .
+     . . . . . . .
+     . . . O O . .
+     . . . O X . .
+     . . . O O . .
+     . X X X X . X
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(25, 34, 41), (40, 56, 4), (20, 60, 20)]
+----------------------------------------
+Board Points: [15, 33, 29]
+Single Agent: [26, 34, 40] (Score: 15) | Parallel Team: [25, 34, 41] (Score: 29)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Single Agent vs Parallel Team (Gravity Grid Game) | TRIAL 3/3 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 4, 4]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 6
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 3, 2]
+----------------------------------------
+Parallel Team executes move: Column 5
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 2
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 4, 4]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 6
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 2, 2]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 6, 0]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 0
+
+Turn 2 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 2, 0]
+----------------------------------------
+Parallel Team executes move: Column 5
+Col: 0 1 2 3 4 5 6
+     . . . . . . .
+     . . . . . . .
+     . . . O . . .
+     . . . X O . .
+     . . O O O O X
+     X . X X X O X
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "To maximize points, we should allocate resources to the zones with higher point values, especially those where our allocation can exceed the opponent's. Given the distribution of points, Zone C has the highest value and is likely to be contested, while Zones A and B are less valuable. We need to ensure that our allocation in Zone C exceeds our opponent's, which could be close due to its high point value.", 'move': [25, 14, 61]}
+  -> {'reasoning': "To maximize points, we should allocate resources to the zones with higher point values, especially those where our allocation can exceed the opponent's. Given the distribution of points, Zone C has the highest value and is likely to be contested, while Zones A and B are less valuable. We need to ensure that our allocation in Zone C exceeds our opponent's, which could be close due to its high point value.", 'move': [0, 0, 61]}
+  -> {'reasoning': "The Critic's strategy of allocating all resources to Zone C aligns with the goal of maximizing points by focusing on highly valuable zones where our allocation can significantly outperform the opponent. Given that the opponent might be close in Zone C, it is crucial to secure a substantial lead there.", 'move': [0, 0, 61]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [0, 0, 61]
+Board Points: [34, 26, 44]
+Single Agent: [21, 29, 50] (Score: 104) | Hierarchical Team: [0, 0, 0] (Score: 0)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Hierarchical Team (Gravity Grid Game) | TRIAL 3/3 ---
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Since Player 1 has only placed one token in column 4, the board is relatively empty. To prevent Player 1 from connecting four tokens quickly and to control more areas of the board, I will drop my token into column 4.', 'move': 4}
+  -> {'reasoning': 'While the intention to control more areas of the board is valid, focusing solely on column 4 may not be the most strategic choice given that Player 1 has only placed one token there. This move does little to disrupt potential winning lines elsewhere or to block Player 1 from creating their own opportunities.', 'move': [4]}
+  -> {'reasoning': "Considering both the reasoning provided by Reasoner and Critic, while controlling column 4 is important, it's crucial to also consider potential threats and opportunities elsewhere on the board. Given Player 1's limited presence in column 4, focusing on that area might not be the best use of the next move. Instead, a more balanced approach would be beneficial.", 'move': [4]}
+----------------------------------------
+HALLUCINATION: Hierarchical Team tried invalid [4]
+Hierarchical Team executes move: Column 6
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just placed their token in column 4, creating an opportunity for vertical connection if we place a token in the same column. Additionally, placing a token here could prevent Player 1 from making a horizontal or diagonal move on their next turn.', 'move': 4}
+  -> {'reasoning': 'The reasoning provided is valid as it identifies the opportunity for a vertical connection and also mentions preventing Player 1 from making a move on their next turn. However, the current state shows that column 4 already has tokens (X X), so placing another token there would not be possible without stacking, which is allowed in Connect Four.', 'move': [0, 1, 2, 3, 5, 6]}
+  -> {'reasoning': "Considering the current state of the board and the rules allowing stacking, it's necessary to look for alternative moves that align with the strategy of vertical connection or preventing Player 1 from making a move in their next turn.", 'move': [4]}
+----------------------------------------
+HALLUCINATION: Hierarchical Team tried invalid [4]
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just placed a token in column 4, creating an opening for Player 2 to prevent a vertical win and potentially set up a diagonal win. Placing a token in column 0 will block the vertical win and position Player 2 for potential future moves.', 'move': 0}
+  -> {'reasoning': 'Player 1 just placed a token in column 4, creating an opening for Player 2 to prevent a vertical win and potentially set up a diagonal win. Placing a token in column 0 will block the vertical win and position Player 2 for potential future moves.', 'move': 0}
+  -> {'reasoning': 'Player 1 just placed a token in column 4, creating an opening for Player 2 to prevent a vertical win and potentially set up a diagonal win. Placing a token in column 0 will block the vertical win and position Player 2 for potential future moves.', 'move': 0}
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just placed a token in column 4, creating an opportunity for Player 2 to block a potential win and set up future moves by placing a token in column 0.', 'move': 0}
+  -> {'reasoning': 'The reasoning is sound as Player 2 can block a potential win by placing a token in column 0. However, the move should be based on strategic positioning for future moves.', 'move': 0}
+  -> {'reasoning': 'Player 1 just placed a token in column 4, creating an opportunity for Player 2 to block a potential win and set up future moves by placing a token in column 0.', 'move': 0}
+----------------------------------------
+Hierarchical Team executes move: Column 0
+
+Turn 1 - Single Agent thinking...
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Single Agent executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just placed a token in column 4, completing a potential vertical win on the next move if Player 2 doesn't block. To prevent this, Player 2 should play in one of the columns above the middle row to disrupt any winning lines that could be formed by either player.", 'move': 3}
+  -> {'reasoning': 'Player 1 has a potential vertical win in column 4, and placing a token in one of the upper columns will disrupt multiple possible winning lines (vertical, diagonal), thus providing more strategic advantage.', 'move': [0]}
+  -> {'reasoning': 'To prevent Player 1 from achieving a vertical win in column 4, and to strategically block multiple potential winning lines, the best move is to place a token in column 0.', 'move': 0}
+----------------------------------------
+Hierarchical Team executes move: Column 0
+Col: 0 1 2 3 4 5 6
+     . . . . . . .
+     . . . . . . .
+     O . . . . . .
+     O . . X . . .
+     O . . X X . .
+     O . . X X . O
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(50, 24, 26), (35, 34, 31), (51, 24, 25)]
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize points, the AI should aim for winning in zones with higher point values first. Given that Zone A has the highest points (47), it makes sense to allocate more resources there than in Zones B and C, which have lower points.', 'move': [51, 24, 25]}
+  -> {'reasoning': 'The reasoning provided suggests a strategic focus on high-point zones, but the move action does not directly correlate with this strategy. The proposed move [51, 24, 25] does not specify actions related to Zone A (the highest point zone). To align better with the given reasoning, the AI should prioritize actions in Zone A.', 'move': [47, 0, 0]}
+  -> {'reasoning': 'The strategy should focus on maximizing points by prioritizing high-point zones. Given that Zone A has the highest points and the initial reasoning suggested a strategic focus on this zone, the revised move should reflect this.', 'move': [47, 0, 0]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [47, 0, 0]
+Board Points: [47, 33, 32]
+Parallel Team: [50, 24, 26] (Score: 112) | Hierarchical Team: [0, 0, 0] (Score: 0)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs Hierarchical Team (Gravity Grid Game) | TRIAL 3/3 ---
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 0, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Since the board is empty except for a single token in Player 1's first move (Column 4), it provides no direct blocking or immediate winning opportunity. The best strategy would be to block potential future wins by Player 1 and set up opportunities for Player 2.", 'move': 4}
+  -> {'reasoning': "Since the board is empty except for a single token in Player 1's first move (Column 4), it provides no direct blocking or immediate winning opportunity. The best strategy would be to block potential future wins by Player 1 and set up opportunities for Player 2.", 'move': 3}
+  -> {'reasoning': "Since the board is empty except for a single token in Player 1's first move (Column 4), it provides no direct blocking or immediate winning opportunity. The best strategy would be to block potential future wins by Player 1 and set up opportunities for Player 2.", 'move': 3}
+----------------------------------------
+Hierarchical Team executes move: Column 3
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 4, 3]
+----------------------------------------
+Parallel Team executes move: Column 0
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has just placed a token in column 4, creating an opportunity for Player 2 to block a potential vertical win and create their own potential win.', 'move': 4}
+  -> {'reasoning': 'The reasoning provided is not entirely accurate since playing in column 4 would create a duplicate block/win opportunity, which might not be the best strategy.', 'move': 0}
+  -> {'reasoning': 'Given that playing in column 4 for Player 2 would either duplicate an existing threat or not effectively prevent a vertical win, exploring other columns could yield better strategic positions.', 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 2, 4]
+----------------------------------------
+Parallel Team executes move: Column 2
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has created a potential threat of connecting 4 tokens horizontally in the next move if a token is placed in column 2 or 3. To prevent this and to set up a future winning position, Player 2 should place the token in column 4.', 'move': 4}
+  -> {'reasoning': 'Player 1 has created a potential threat of connecting 4 tokens horizontally in the next move if a token is placed in column 2 or 3. To prevent this and to set up a future winning position, Player 2 should place the token in column 4.', 'move': 4}
+  -> {'reasoning': 'Player 1 has created a potential threat of connecting 4 tokens horizontally in the next move if a token is placed in column 2 or 3. To prevent this and to set up a future winning position, Player 2 should place the token in column 4.', 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 6, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 just played in column 3, creating a potential threat of connecting four horizontally or diagonally. To block this and control the center of the board, it's wise to play in column 2.", 'move': 2}
+  -> {'reasoning': "Player 1's previous move in column 3 indicates a strategic attempt to create a horizontal or diagonal win. Blocking this and maintaining central control is indeed a sound strategy. However, considering the current board state, playing in column 2 might not be optimal as it doesn't directly address the immediate threat in column 3.", 'move': 1}
+  -> {'reasoning': "Considering Player 1's potential horizontal or diagonal win from their previous move in column 3, and that playing in column 2 might not effectively block this immediate threat, the Critic suggests a more direct approach to blocking by playing in column 1.", 'move': 1}
+----------------------------------------
+Hierarchical Team executes move: Column 1
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [1, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 just placed a token in column 3, completing a potential horizontal or diagonal win. To prevent this and secure a winning position myself, I should play in column 6.', 'move': 6}
+  -> {'reasoning': 'Given that the board has a potential win for Player 1 in columns 3 and 5 due to two tokens already placed vertically, playing in column 6 is not necessarily the best move as it does not directly address the immediate threat. Instead, blocking the horizontal or diagonal win should be prioritized.', 'move': 5}
+  -> {'reasoning': "Considering both Reasoner and Critic's inputs, while the reasoning from the Reasoner highlights a potential winning opportunity in column 6, the Critic points out that blocking Player 1's immediate win is more critical. Given the situation, playing in column 5 to block the vertical win would be the best strategy.", 'move': 5}
+----------------------------------------
+Hierarchical Team executes move: Column 5
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 2, 3]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just placed a token in column 4, creating an open '3' in the diagonal and vertical lines from that token. To prevent Player 1 from winning on their next turn and to create multiple potential win scenarios, I will play in column 2.", 'move': 2}
+  -> {'reasoning': "Player 1 has placed a token in column 4, which creates an open '3' in the diagonal and vertical lines from that token. To prevent Player 1 from winning on their next turn and to create multiple potential win scenarios, playing in column 2 is a strategic choice as it blocks one of Player 1's potential diagonals while also setting up future moves.", 'move': 2}
+  -> {'reasoning': "Player 1 has placed a token in column 4, creating an open '3' in the diagonal and vertical lines from that token. To prevent Player 1 from winning on their next turn and to create multiple potential win scenarios, playing in column 2 is strategically important as it blocks one of Player 1's potential diagonals while also setting up future moves.", 'move': 2}
+----------------------------------------
+Hierarchical Team executes move: Column 2
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [4, 4, 2]
+----------------------------------------
+Parallel Team executes move: Column 4
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Player 1 has created a potential winning line in column 4 with their last move (O O O X), so we should block this by playing in column 4.', 'move': 4}
+  -> {'reasoning': 'Player 1 has created a potential winning line in column 4 with their last move (O O O X), so we should block this by playing in column 4.', 'move': 4}
+  -> {'reasoning': 'Player 1 has created a potential winning line in column 4 with their last move (O O O X), so we should block this by playing in column 4.', 'move': 4}
+----------------------------------------
+Hierarchical Team executes move: Column 4
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 3, 3]
+----------------------------------------
+Parallel Team executes move: Column 3
+
+Turn 2 - Hierarchical Team thinking...
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Player 1 has just played in column 4, leading to a potential block for Player 2. To prevent this and secure a future win opportunity, we should aim to create a fork or block the opponent's winning move. Dropping a token in column 6 would create a fork by aligning three tokens vertically while also blocking a potential vertical win from Player 1.", 'move': 6}
+  -> {'reasoning': "Player 1 has just played in column 4, leading to a potential block for Player 2. To prevent this and secure a future win opportunity, we should aim to create a fork or block the opponent's winning move. Dropping a token in column 6 would create a fork by aligning three tokens vertically while also blocking a potential vertical win from Player 1.", 'move': 6}
+  -> {'reasoning': "Player 1 has just played in column 4, leading to a potential block for Player 2. To prevent this and secure a future win opportunity, we should aim to create a fork or block the opponent's winning move. Dropping a token in column 6 would create a fork by aligning three tokens vertically while also blocking a potential vertical win from Player 1.", 'move': 6}
+----------------------------------------
+Hierarchical Team executes move: Column 6
+
+Turn 1 - Parallel Team thinking...
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 0, 6]
+----------------------------------------
+Parallel Team executes move: Column 3
+Col: 0 1 2 3 4 5 6
+     . . . X . . .
+     . . . X . . .
+     . . . X O . .
+     . . . X X . .
+     . O O O X . .
+     X O X X O O O
+>>> WINNER: Parallel Team <<<
+
+############################################################
+PHASE 2: AI vs STANDARD BOTS (RESOURCE ALLOCATION)
+############################################################
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Board Points: [26, 13, 41]
+Single Agent: [25, 25, 50] (Score: 41) | Uniform Bot: [33, 33, 34] (Score: 39)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Board Points: [14, 13, 46]
+Single Agent: [46, 27, 27] (Score: 27) | Random Bot: [41, 4, 55] (Score: 46)
+>>> WINNER: Random Bot <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(32, 9, 59), (40, 11, 49), (40, 15, 45)]
+----------------------------------------
+Board Points: [32, 11, 37]
+Parallel Team: [32, 9, 59] (Score: 37) | Uniform Bot: [33, 33, 34] (Score: 43)
+>>> WINNER: Uniform Bot <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(30, 10, 60), (30, 35, 35), (30, 20, 50)]
+----------------------------------------
+Board Points: [41, 23, 46]
+Parallel Team: [30, 10, 60] (Score: 69) | Random Bot: [78, 7, 15] (Score: 41)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize the points, we need to focus on winning in Zone A since it has the highest point value. We should allocate more resources to Zone A than to the other zones while ensuring the total is 100 units.', 'move': [56, 22, 22]}
+  -> {'reasoning': 'The reasoning is sound as Zone A does have the highest point value and thus should be prioritized to maximize points. However, allocating exactly half of the resources (50%) to each zone might not be optimal given the specific point values. Allocating 56 units to Zone A, which has the highest points, and 22 units to Zones B and C is a good strategy. The move appears balanced and effective.', 'move': [56, 22, 22]}
+  -> {'reasoning': 'To maximize the points, we need to focus on winning in Zone A since it has the highest point value. We should allocate more resources to Zone A than to the other zones while ensuring the total is 100 units.', 'move': [56, 22, 22]}
+----------------------------------------
+Board Points: [49, 29, 28]
+Hierarchical Team: [56, 22, 22] (Score: 49) | Uniform Bot: [33, 33, 34] (Score: 57)
+>>> WINNER: Uniform Bot <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 1/3 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize points, we should allocate resources to the zones with higher values first while ensuring we have more units than our opponent in those zones.', 'move': [28, 31, 41]}
+  -> {'reasoning': "The selected move targets Zones A (31), B (40), and C (44) in that order based on their point values. Given the goal is to maximize points by allocating resources first to higher value zones, this strategy aligns well. However, it's important to ensure that we have more units than our opponent in these zones to secure control over them.", 'move': [31, 44, 40]}
+  -> {'reasoning': 'Combining the strategies from Reasoner and Critic, the optimal move is to allocate resources first to Zone C (44) due to its high point value, followed by Zone A (31), then Zone B (40). This ensures we target the highest-value zones while maintaining control over them.', 'move': [44, 31, 40]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [44, 31, 40]
+Board Points: [31, 40, 44]
+Hierarchical Team: [0, 0, 0] (Score: 0) | Random Bot: [81, 8, 11] (Score: 115)
+>>> WINNER: Random Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Board Points: [16, 20, 27]
+Single Agent: [30, 25, 45] (Score: 27) | Uniform Bot: [33, 33, 34] (Score: 36)
+>>> WINNER: Uniform Bot <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Board Points: [11, 35, 17]
+Single Agent: [23, 51, 26] (Score: 35) | Random Bot: [27, 39, 34] (Score: 28)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(53, 27, 20), (51, 24, 25), (53, 24, 23)]
+----------------------------------------
+Board Points: [43, 37, 21]
+Parallel Team: [53, 27, 20] (Score: 43) | Uniform Bot: [33, 33, 34] (Score: 58)
+>>> WINNER: Uniform Bot <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(12, 50, 38), (31, 34, 35), (20, 45, 35)]
+----------------------------------------
+Board Points: [43, 48, 33]
+Parallel Team: [12, 50, 38] (Score: 81) | Random Bot: [64, 29, 7] (Score: 43)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "To maximize points, we should allocate resources in such a way that each zone has at least one unit more than the opponent's allocation if possible. Given the point values, Zone C is the most valuable and should be prioritized.", 'move': [39, 38, 23]}
+  -> {'reasoning': 'The reasoning provided is clear and logical but could be more detailed in explaining how the move impacts the overall strategy. The move aims to prioritize Zone C as it has the highest point value, which aligns with the goal of maximizing points. However, there might be a risk if the opponent can counter this move effectively.', 'move': [39, 38, 23]}
+  -> {'reasoning': "The strategy prioritizes Zone C due to its high point value and ensures each zone has at least one unit more than the opponent's allocation where possible. This move aims to maximize overall points while maintaining a competitive edge in all zones.", 'move': [39, 38, 23]}
+----------------------------------------
+Board Points: [36, 32, 38]
+Hierarchical Team: [39, 38, 23] (Score: 68) | Uniform Bot: [33, 33, 34] (Score: 38)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 2/3 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize points, we should focus on zones with higher values and ensure that the distribution is such that we have more units in at least one zone than our opponent. Given the point values, Zone A offers the most value, followed by Zone B and then Zone C.', 'move': [43, 22, 35]}
+  -> {'reasoning': 'The reasoning provided is logically sound as it prioritizes higher point zones and ensures a strong distribution. However, the move values could be more clearly linked to the zones (A, B, or C). The total points distributed are 100, with an emphasis on Zone A for maximum value.', 'move': [43, 22, 35]}
+  -> {'reasoning': 'The reasoning provided by the Reasoner and Critic is sound and aligns well. The focus on zones with higher point values (Zone A first) while ensuring a balanced distribution is a strong strategy. The move values of [43, 22, 35] distribute 100 points effectively, with a significant portion in Zone A to maximize value.', 'move': [43, 22, 35]}
+----------------------------------------
+Board Points: [43, 22, 17]
+Hierarchical Team: [43, 22, 35] (Score: 17) | Random Bot: [49, 35, 16] (Score: 65)
+>>> WINNER: Random Bot <<<
+
+==================================================
+--- Single Agent vs Uniform Bot (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Board Points: [48, 35, 16]
+Single Agent: [48, 32, 20] (Score: 48) | Uniform Bot: [33, 33, 34] (Score: 51)
+>>> WINNER: Uniform Bot <<<
+
+==================================================
+--- Single Agent vs Random Bot (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+Board Points: [18, 50, 23]
+Single Agent: [2, 97, 1] (Score: 50) | Random Bot: [6, 9, 85] (Score: 41)
+>>> WINNER: Single Agent <<<
+
+==================================================
+--- Parallel Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(50, 25, 25), (46, 27, 27), (46, 28, 26)]
+----------------------------------------
+Board Points: [46, 28, 13]
+Parallel Team: [50, 25, 25] (Score: 46) | Uniform Bot: [33, 33, 34] (Score: 41)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Parallel Team vs Random Bot (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [(36, 36, 28), (33, 40, 27), (30, 35, 35)]
+----------------------------------------
+Board Points: [14, 20, 15]
+Parallel Team: [36, 36, 28] (Score: 35) | Random Bot: [42, 32, 26] (Score: 14)
+>>> WINNER: Parallel Team <<<
+
+==================================================
+--- Hierarchical Team vs Uniform Bot (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'To maximize points, we should allocate resources in such a way that we strictly outperform the opponent in as many zones as possible. Given the point values, Zone A has the highest value and thus is crucial to secure. We can assume the opponent might try to match or exceed our allocation in Zone B (11 points) but not necessarily in Zone C (12 points). Therefore, we should allocate more than half of the resources to Zone A and distribute the rest between Zones B and C.', 'move': [51, 24, 25]}
+  -> {'reasoning': 'The strategy to secure the highest point value in Zone A is sound given its high point value of 31. However, the proposed move distribution could be optimized for a more balanced approach that considers potential opponent behavior while maximizing our points.', 'move': [50, 24, 26]}
+  -> {'reasoning': "The initial strategy prioritizes Zone A due to its high point value and the assumption of opponent behavior in Zones B and C. The Critic suggests a slightly more balanced approach while still focusing on securing Zone A's maximum points, which is a prudent adjustment.", 'move': [50, 24, 26]}
+----------------------------------------
+Board Points: [31, 11, 12]
+Hierarchical Team: [50, 24, 26] (Score: 31) | Uniform Bot: [33, 33, 34] (Score: 23)
+>>> WINNER: Hierarchical Team <<<
+
+==================================================
+--- Hierarchical Team vs Random Bot (Simultaneous Resource Game) | TRIAL 3/3 ---
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "To maximize the points while ensuring all units are used, we need to allocate more units to the zones with higher point values. Given that Zone B has the highest value (37), it is crucial to allocate significantly more than the opponent's potential allocation in this zone. Assuming a balanced or conservative strategy from the opponent, allocating 50 units to Zone B seems strategic. This leaves us with 50 units for Zones A and C, which we can split between them based on their point values.", 'move': [23, 24, 53]}
+  -> {'reasoning': "To maximize the points while ensuring all units are used, we need to allocate more units to the zones with higher point values. Given that Zone B has the highest value (37), it is crucial to allocate significantly more than the opponent's potential allocation in this zone. Assuming a balanced or conservative strategy from the opponent, allocating 50 units to Zone B seems strategic. This leaves us with 50 units for Zones A and C, which we can split between them based on their point values.", 'move': [50, 23, 24]}
+  -> {'reasoning': "To maximize the points while ensuring all units are used, we need to allocate more units to the zones with higher point values. Given that Zone B has the highest value (37), it is crucial to allocate significantly more than the opponent's potential allocation in this zone. Assuming a balanced or conservative strategy from the opponent, allocating 50 units to Zone B seems strategic. This leaves us with 50 units for Zones A and C, which we can split between them based on their point values.", 'move': [50, 23, 24]}
+----------------------------------------
+HALLUCINATION PENALTY: Hierarchical Team invalid [50, 23, 24]
+Board Points: [10, 37, 12]
+Hierarchical Team: [0, 0, 0] (Score: 0) | Random Bot: [71, 5, 24] (Score: 59)
+>>> WINNER: Random Bot <<<
+
+############################################################
+PHASE 3: GRAVITY GRID OPTIMAL ACCURACY
+############################################################
+
+==================================================
+=== ACCURACY TEST: Single Agent vs Minimax Oracle | TRIAL 1/3 ===
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+>>> ORACLE WINS <<<
+[Single Agent Trial 1 Stats] Moves: 4 | Perfect: 1 | Blunders: 1 | Accuracy: 25.0%
+
+==================================================
+=== ACCURACY TEST: Parallel Team vs Minimax Oracle | TRIAL 1/3 ===
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 0, 0]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 6, 6]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 6, 6]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [2, 6, 6]
+----------------------------------------
+>>> ORACLE WINS <<<
+[Parallel Team Trial 1 Stats] Moves: 4 | Perfect: 1 | Blunders: 1 | Accuracy: 25.0%
+
+==================================================
+=== ACCURACY TEST: Hierarchical Team vs Minimax Oracle | TRIAL 1/3 ===
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Choosing any column will allow the token to be placed as long as it does not cause an immediate win for the opponent or block their win. Since no tokens are on the board yet, choosing a random valid column is appropriate. For simplicity, I'll choose column 0.", 'move': 0}
+  -> {'reasoning': "The reasoning provided is logically sound as it aims to avoid immediate loss and doesn't block the opponent's win in this initial state of the game. However, choosing a random column might not be the most strategic approach for a logical AI. A more sophisticated strategy could analyze potential future moves or board states, but given that no tokens are placed yet, any valid move is indeed correct.", 'move': 0}
+  -> {'reasoning': 'Choosing column 0 in this initial state of the game is a valid and logical choice as it does not immediately create a winning scenario for either player and aligns with avoiding immediate loss.', 'move': 0}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'The column with the least tokens to potentially connect 4 is column 6, as it currently has no tokens.', 'move': 6}
+  -> {'reasoning': "The move in column 6 is optimal for preventing the opponent from connecting four tokens horizontally. While it's true that column 6 currently has no tokens, choosing this column doesn't take into account potential future moves. Given the current state, columns 0 and 4 are more strategic as they could lead to a quicker win or block the opponent.", 'move': [0, 4]}
+  -> {'reasoning': "Considering both the reasoner's focus on column 6 for preventing an immediate loss and the critic's emphasis on strategic positioning in columns that can lead to a quicker win or block the opponent, a balanced approach would be to select one of these strategic columns. Given that column 6 is already empty, choosing either column 0 or 4 aligns with both perspectives.", 'move': [0, 4]}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "The current valid moves are columns 0 to 6, and dropping a token in column 0 or 1 would be the best strategy as they have space for a 'O'. However, column 3 is directly below an 'X', suggesting it might lead to a win if filled.", 'move': 3}
+  -> {'reasoning': "While column 3 directly below an 'X' could potentially lead to a win if filled, the primary strategy should focus on creating opportunities for placing an 'O'. Columns 0 and 1 offer more open spaces for future plays.", 'move': [0]}
+  -> {'reasoning': 'Considering both the potential for immediate win in column 3 and the broader strategic advantage of creating more placement opportunities, columns 0 or 1 are prioritized. However, since column 3 could potentially lead to a quick victory, it is given preference.', 'move': 3}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'The valid moves are columns 0 through 6. Dropping a token in column 0 will not create a win for either player since the bottom of that column is empty and no four-in-a-row has been formed.', 'move': 0}
+  -> {'reasoning': 'The valid move analysis is accurate, but the reasoning could be more detailed regarding future possibilities.', 'move': 0}
+  -> {'reasoning': "Column 0 was determined to have no immediate winning condition for either player, and it's a safe choice given the current game state.", 'move': 0}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "The columns 1, 3, 4, 5, and 6 are already occupied by tokens in the bottom row, making it impossible to immediately form a win from those columns. Column 2 has an 'O' two rows up, so dropping a token there might not lead to an immediate win but could potentially set up future wins. However, column 0 is currently open and dropping a token here would place it directly below the existing tokens in column 2, thus connecting four tokens (OOXX).", 'move': 0}
+  -> {'reasoning': "Column 1 is already occupied by a token in the bottom row, making it impossible to immediately form a win from that column. Column 2 has an 'O' two rows up, so dropping a token there might not lead to an immediate win but could potentially set up future wins. However, column 0 is currently open and dropping a token here would place it directly below the existing tokens in column 2, thus connecting four tokens (OOXX).", 'move': 0}
+  -> {'reasoning': 'Column 0 is the best choice as it allows for an immediate win by placing a token directly below the existing tokens in column 2, forming a line of four tokens (OOXX). No other column offers this opportunity.', 'move': 0}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 0 already has tokens at the bottom, so dropping a token here will result in a win for X.', 'move': 0}
+  -> {'reasoning': 'The reasoning provided is incorrect because column 0 does not have tokens at the bottom, and thus dropping a token here will not result in an immediate win for X.', 'move': 1}
+  -> {'reasoning': "Critic's assessment is correct as there are no tokens at the bottom of column 0. Placing a token in column 1 would be a strategic choice to block potential wins for opponent X.", 'move': 1}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 0 and 5 already have tokens at the bottom, making them invalid choices. Column 4 has a token above an empty spot, but dropping in column 3 would create a potential win opportunity for 'X'.", 'move': 3}
+  -> {'reasoning': "Column 0 and 5 already have tokens at the bottom, making them invalid choices. Column 4 has a token above an empty spot, but dropping in column 3 would create a potential win opportunity for 'X'. Choosing column 6 instead provides a safe play without creating an immediate threat to the opponent.", 'move': 6}
+  -> {'reasoning': "Column 0 and 5 already have tokens at the bottom, making them invalid choices. Column 4 has a token above an empty spot, but dropping in column 3 would create a potential win opportunity for 'X'. Choosing column 6 instead provides a safe play without creating an immediate threat to the opponent.", 'move': 6}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "The valid columns to drop tokens are [1, 2, 3, 4, 5, 6]. Dropping a token in column 0 would not change the current state as it is already full with 'X'.", 'move': 1}
+  -> {'reasoning': "The move in column 0 is invalid as it is already full with 'X'. The valid columns to drop tokens are [1, 2, 3, 4, 5, 6]. Choosing column 1 is a reasonable next step.", 'move': 1}
+  -> {'reasoning': "Considering both the Reasoner and Critic's input, dropping a token in column 1 is a valid and reasonable next step given that all other columns are already full with 'X'.", 'move': 1}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 0 is already full with tokens from top to bottom, and dropping a token in any other column will not result in an immediate win for the current player.', 'move': 0}
+  -> {'reasoning': 'The reasoning provided is incorrect because although column 0 is full, the current player can still make a move in any other valid column (1-6) that does not immediately result in a win for the opponent or an immediate win for themselves.', 'move': [1]}
+  -> {'reasoning': 'The reasoning provided by Reasoner is incorrect as it assumes column 0 cannot be used despite being full, which does not affect other columns where a winning position can still be created.', 'move': 1}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 2 is the best move to potentially block opponent's win and set up a winning connection in the next turn.", 'move': 2}
+  -> {'reasoning': "Column 2 is the best move to potentially block opponent's win and set up a winning connection in the next turn.", 'move': 2}
+  -> {'reasoning': "Column 2 is the best move to potentially block opponent's win and set up a winning connection in the next turn.", 'move': 2}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 2 is the best move to block opponent and potentially win. After placing a token in column 2, it completes a line of 4 tokens (OOOX), winning the game.', 'move': 2}
+  -> {'reasoning': 'Column 2 is the best move to block opponent and potentially win. After placing a token in column 2, it completes a line of 4 tokens (OOOX), winning the game.', 'move': 2}
+  -> {'reasoning': 'Column 2 is the best move to block opponent and potentially win. After placing a token in column 2, it completes a line of 4 tokens (OOOX), winning the game.', 'move': 2}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 2 and 3 are full after the last move in column 6. The valid moves left are [4, 5, 6]. To win, we need to place a token in a way that can create a potential win scenario. Looking at the board, placing a token in column 5 could potentially complete a row, given the tokens already present.', 'move': 5}
+  -> {'reasoning': 'The board analysis is accurate, but the valid moves list provided in the state does not match the reasoning. The correct valid moves should be [4, 5]. Column 6 is full as mentioned, so it cannot be a valid move.', 'move': 5}
+  -> {'reasoning': 'The board analysis indicates that column 5 could potentially complete a row given the tokens already present. The valid moves should be [4, 5] based on the current state of the board.', 'move': 5}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 2 is valid and could potentially lead to a winning move by placing a token at the bottom row.', 'move': 2}
+  -> {'reasoning': "Column 2 is currently full as evidenced by the last row being occupied by 'X' and 'O', making it invalid for placing a token.", 'move': 5}
+  -> {'reasoning': "After reviewing both Reasoner's and Critic's reasoning, Column 2 is invalid due to being full. Therefore, following the Critic's valid point, moving in Column 5 would be the appropriate choice.", 'move': 5}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 3 is the best choice as it allows for a potential win in the next move by placing a token below the existing two tokens.', 'move': 3}
+  -> {'reasoning': 'Column 3 is the best choice as it allows for a potential win in the next move by placing a token below the existing two tokens.', 'move': 3}
+  -> {'reasoning': 'Both Reasoner and Critic agree that Column 3 is the optimal choice for the next move to potentially win.', 'move': 3}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 6 is the best choice as it allows for a potential win in the next move by placing a token below the existing X.', 'move': 6}
+  -> {'reasoning': 'The reasoning provided suggests placing a token in column 6 to potentially win the game on the next move. However, column 6 is already full as indicated by the state. Therefore, the move is invalid.', 'move': None}
+  -> {'reasoning': 'Column 6 is the best choice as it allows for a potential win in the next move by placing a token below the existing X.', 'move': None}
+----------------------------------------
+>>> Hierarchical Team BEAT THE ORACLE! <<<
+[Hierarchical Team Trial 1 Stats] Moves: 15 | Perfect: 10 | Blunders: 3 | Accuracy: 66.7%
+
+==================================================
+=== ACCURACY TEST: Single Agent vs Minimax Oracle | TRIAL 2/3 ===
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+>>> ORACLE WINS <<<
+[Single Agent Trial 2 Stats] Moves: 4 | Perfect: 1 | Blunders: 0 | Accuracy: 25.0%
+
+==================================================
+=== ACCURACY TEST: Parallel Team vs Minimax Oracle | TRIAL 2/3 ===
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [0, 3, 3]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [5, 6, 6]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 6, 3]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 3, 6]
+----------------------------------------
+>>> ORACLE WINS <<<
+[Parallel Team Trial 2 Stats] Moves: 4 | Perfect: 0 | Blunders: 1 | Accuracy: 0.0%
+
+==================================================
+=== ACCURACY TEST: Hierarchical Team vs Minimax Oracle | TRIAL 2/3 ===
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'The valid columns to drop a token are all within the range of 0-6. Since no previous moves or winning conditions were provided, any column choice is valid for the first move.', 'move': 0}
+  -> {'reasoning': 'The reasoning provided is correct; the first move can be any column as no previous moves or winning conditions are given. However, choosing column 0 might not be the most strategic for setting up future plays.', 'move': 3}
+  -> {'reasoning': 'The reasoning provided by both Reasoner and Critic is valid. While any column can technically be chosen as a first move due to lack of prior moves or conditions, the Critic suggests choosing a central column for potential future strategic advantages.', 'move': 3}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'The valid moves are columns 0 through 6. Dropping a token in column 0 will result in a connection of 4 tokens (OOXX), winning the game.', 'move': 0}
+  -> {'reasoning': 'The given state shows a winning move has already occurred in column 0 with the sequence OOXX. Dropping another token here will result in four consecutive O tokens (OOOX), thus ending the game.', 'move': 0}
+  -> {'reasoning': 'Given that dropping a token in column 0 results in either winning for X or ensuring an immediate win for O, this move is strategic to secure the victory.', 'move': 0}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "The valid moves are in columns 0-6. Column 3 is already occupied by an 'O' and column 2 is also occupied by an 'X'. Dropping a token in either of these will not change the current state. However, dropping tokens in columns 1, 4, 5 or 6 may lead to a potential win. Since the question asks for a single integer, we can choose any valid move that doesn't immediately result in a loss, such as column 1.", 'move': 1}
+  -> {'reasoning': "The valid moves are in columns 0-6. Column 3 is already occupied by an 'O' and column 2 is also occupied by an 'X'. Dropping a token in either of these will not change the current state. However, dropping tokens in columns 1, 4, 5 or 6 may lead to a potential win. Since the question asks for a single integer, we can choose any valid move that doesn't immediately result in a loss, such as column 1.", 'move': 1}
+  -> {'reasoning': "The valid moves are in columns 0-6. Column 3 is already occupied by an 'O' and column 2 is also occupied by an 'X'. Dropping a token in either of these will not change the current state. However, dropping tokens in columns 1, 4, 5 or 6 may lead to a potential win. Since the question asks for a single integer, we can choose any valid move that doesn't immediately result in a loss, such as column 1.", 'move': 1}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 6 is the best choice to drop a token as it has an empty spot and could potentially lead to a win or block the opponent's win.", 'move': 6}
+  -> {'reasoning': "Column 6 is a strong choice as it currently has an empty spot and could be pivotal in either winning the game or directly blocking the opponent's potential win.", 'move': 6}
+  -> {'reasoning': "Both Reasoner and Critic agree that Column 6 is a strategic choice for dropping a token, as it offers a path to victory or blocks the opponent's potential win.", 'move': 6}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 0 is the only valid move that could potentially lead to a win or block the opponent's win since it has space and the other columns are full.", 'move': 0}
+  -> {'reasoning': "Column 0 is the only valid move that could potentially lead to a win or block the opponent's win since it has space and the other columns are full.", 'move': 0}
+  -> {'reasoning': "Column 0 is the only valid move that could potentially lead to a win or block the opponent's win since it has space and the other columns are full.", 'move': 0}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 0 already has tokens at the bottom, and dropping a token here will result in a win for the 'X' player due to a vertical connection of 4 tokens.", 'move': 0}
+  -> {'reasoning': "The reasoning provided incorrectly states that column 0 already has tokens at the bottom which would result in an immediate win for 'X'. However, currently, column 0 only has tokens in the first two rows and does not yet form a vertical connection of 4 tokens.", 'move': [1, 2, 3, 4, 5, 6]}
+  -> {'reasoning': "The Critic's analysis is correct; column 0 does not currently have a vertical win for 'X'. The best move according to the Critic's evaluation should be any of the columns provided.", 'move': [1, 2, 3, 4, 5, 6]}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'Column 0 already has tokens at the bottom, so dropping a token here will result in a win for the current player (X).', 'move': 0}
+  -> {'reasoning': 'The reasoning provided is incorrect because column 0 already has tokens at the bottom and cannot result in an immediate win for the current player (X) by dropping a token there. The move would simply add another X to the existing row without completing it.', 'move': 5}
+  -> {'reasoning': "The Critic's reasoning is correct as dropping a token in column 0 will not result in an immediate win for player X. Therefore, the best move would be column 5.", 'move': 5}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 0 already has tokens at the bottom, so placing a token here will result in a win for either player depending on whose turn it is. However, since no previous moves indicate whose turn it currently is, we can infer that the last move was made by O, as X's were placed first and there are more X's than O's visible. Therefore, it's O's turn to play to maintain the balance or try for a win.", 'move': 0}
+  -> {'reasoning': 'Column 0 is already full, so placing a token here is not possible. Therefore, the move should be in one of the other valid columns.', 'move': [1, 2, 3, 4, 5, 6]}
+  -> {'reasoning': 'Column 0 is already full, so placing a token here is not possible. The only logical moves are in the remaining valid columns.', 'move': [1, 2, 3, 4, 5, 6]}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 0 is already full, so the best move to make would be any of the valid columns that aren't full.", 'move': 1}
+  -> {'reasoning': 'The reasoning provided is generally correct but could be more precise. Since Column 0 is already full and the current move should avoid it, any of the valid columns (1-6) would indeed be a good choice to prevent an immediate loss.', 'move': [1, 2, 3, 4, 5, 6]}
+  -> {'reasoning': 'Column 0 is full, thus choosing any valid column (1-6) prevents an immediate loss.', 'move': [1, 2, 3, 4, 5, 6]}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Column 0 is full and cannot have a valid move that doesn't immediately lose the game. Columns 1, 3, 4, 5, and 6 do not give an immediate win for O, but column 2 dropping a token at the bottom could be a strategic play to block or create opportunities.", 'move': 2}
+  -> {'reasoning': "Column 0 is already full, so it's not a valid move. The chosen move (column 2) could be strategic to block or create opportunities for O.", 'move': 2}
+  -> {'reasoning': 'Based on the reasoning provided by Reasoner and Critic, column 0 is full and invalid, while columns 1, 3, 4, 5, and 6 do not immediately lead to a win for O but column 2 could be strategic. Given this analysis, moving in column 2 aligns with both critiques.', 'move': 2}
+----------------------------------------
+>>> ORACLE WINS <<<
+[Hierarchical Team Trial 2 Stats] Moves: 10 | Perfect: 2 | Blunders: 5 | Accuracy: 20.0%
+
+==================================================
+=== ACCURACY TEST: Single Agent vs Minimax Oracle | TRIAL 3/3 ===
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+
+[ REASONING TRACE FOR Single Agent ]
+  -> Single Call
+----------------------------------------
+>>> ORACLE WINS <<<
+[Single Agent Trial 3 Stats] Moves: 4 | Perfect: 1 | Blunders: 0 | Accuracy: 25.0%
+
+==================================================
+=== ACCURACY TEST: Parallel Team vs Minimax Oracle | TRIAL 3/3 ===
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [3, 3, 3]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 6, 6]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 3, 3]
+----------------------------------------
+
+[ REASONING TRACE FOR Parallel Team ]
+  -> Votes: [6, 6, 6]
+----------------------------------------
+>>> ORACLE WINS <<<
+[Parallel Team Trial 3 Stats] Moves: 4 | Perfect: 0 | Blunders: 0 | Accuracy: 0.0%
+
+==================================================
+=== ACCURACY TEST: Hierarchical Team vs Minimax Oracle | TRIAL 3/3 ===
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': 'The state shows an empty grid. Any column choice is valid to make the first move.', 'move': 0}
+  -> {'reasoning': 'The initial state of the grid is empty, so any column can be chosen for the first move as no row in any column is occupied.', 'move': 0}
+  -> {'reasoning': 'Both Reasoner and Critic agree that any column can be chosen since the grid is initially empty.', 'move': 0}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Since the last move was in column 4 by player X, to make a strategic move, we can choose any other column that is not full and might lead to a potential win or block the opponent's winning move.", 'move': 1}
+  -> {'reasoning': "The reasoning provided is sound as it avoids repeating the last move and considers potential future moves. However, column 4 (where the opponent's previous move was) could still be a critical position to watch for a winning or blocking opportunity.", 'move': [1]}
+  -> {'reasoning': 'Considering the strategic importance of column 4 and to prevent the opponent from potentially winning, while also exploring other columns, moving in column 1 is a balanced choice.', 'move': 1}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "Considering the current state, columns 3 and 4 are occupied by 'O' at the bottom, making them unsuitable for a quick win or block. Column 2 is also occupied similarly. Placing a token in column 1 could potentially lead to a win since it has open spaces directly above the existing tokens.", 'move': 1}
+  -> {'reasoning': "The reasoning provided is logical as columns 3 and 4 are occupied by 'O' at the bottom, making them unsuitable for a quick win or block. Column 2 is also similarly occupied. Placing a token in column 1 could potentially lead to a win since it has open spaces directly above the existing tokens.", 'move': 1}
+  -> {'reasoning': "Columns 3 and 4 are occupied by 'O' at the bottom, making them unsuitable for a quick win or block. Column 2 is also similarly occupied. Placing a token in column 1 could potentially lead to a win since it has open spaces directly above the existing tokens.", 'move': 1}
+----------------------------------------
+
+[ REASONING TRACE FOR Hierarchical Team ]
+  -> {'reasoning': "The valid moves are columns 0 through 6. However, to make a strategic move, we should consider the current board state and aim for a potential win or block an opponent's win. In this case, dropping a token in column 4 would likely create a winning scenario by completing a '4-in-a-row'.", 'move': 4}
+  -> {'reasoning': "The analysis is sound as it considers strategic placement to potentially win the game by completing a '4-in-a-row'. However, given the current board state, dropping a token in column 4 might not necessarily create an immediate winning scenario because row limitations could prevent it.", 'move': 3}
+  -> {'reasoning': "Considering both Reasoner and Critic's inputs, while a move in column 4 is strategically sound for potentially creating a '4-in-a-row', the current board state might not support this due to row limitations. Therefore, moving in column 3 as suggested by the Critic could be a more practical approach that still aligns with strategic goals.", 'move': 3}
+----------------------------------------
+>>> ORACLE WINS <<<
+[Hierarchical Team Trial 3 Stats] Moves: 4 | Perfect: 1 | Blunders: 1 | Accuracy: 25.0%
+
