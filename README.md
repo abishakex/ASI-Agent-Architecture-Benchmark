@@ -1,4 +1,3 @@
-## Reproducibility 
 
 
 1. Download Ollama from [ollama.com](https://ollama.com/) or install it via terminal:
