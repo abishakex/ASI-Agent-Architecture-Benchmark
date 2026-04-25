@@ -1,7 +1,7 @@
 ## Reproducibility 
 
 
-1. Download Ollama from [ollama.com](https://ollama.com/) or install it via terminal (Mac/Linux):
+1. Download Ollama from [ollama.com](https://ollama.com/) or install it via terminal:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
